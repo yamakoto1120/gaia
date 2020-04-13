@@ -1,0 +1,1 @@
+# yamakoto120.github.io
