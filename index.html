@@ -1,52 +1,9 @@
+<!DOCTYPE html><html><title> </title><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+* {box-sizing: border-box;} body {margin: 0;} #v {position: fixed; right: 0; bottom: 0;  min-width: 100%; min-height: 100%; position: absolute; left: 50%; -webkit-transform: translateX(-50%);transform: translateX(-50%);} </style></head><body><video autoplay loop id="v">
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+<source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+<source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+<source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+<source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
   
-}
-
-
-
-</style>
-</head>
-<body>
-
-<video autoplay loop id="myVideo">
-  <source src="https://www.dropbox.com/s/uow7cs53j9lchym/Unknown%20Mortal%20Orchestra%20-%20Hunnybee%20-Official%20Video-.mp4?dl=1" type="video/mp4">
-</video>
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-
-</body>
-</html>
+</video></body></html>
