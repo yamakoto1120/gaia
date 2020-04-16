@@ -15,21 +15,21 @@ body,div,html{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-a
 $('.plr').each(function() {
 var num = Math.floor(Math.random() * 2),
 img = $(this);
-img.attr('src', 'https://www.youtube-nocookie.com/embed/videoseries?list=PLGzMK_NF7H6TnZ18-dxtPpJ7abYYahl0x&loop=1&autoplay=1&controls=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&vq=hd1080&index='+num);
+img.attr('src', 'https://www.youtube-nocookie.com/embed/videoseries?list=PLGzMK_NF7H6TnZ18-dxtPpJ7abYYahl0x&loop=1&autoplay=1&controls=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&vq=hd1080&enablejsapi=1&index='+num);
 img.attr('alt', 'Src: '+img.attr('src'));
 });
-
-
-var videoNew = document.querySelector('.plr');
-if (videoNew.play) {
-  videoNew.play();
-}
-else {
-  videoNew.innerHTML = '<embed src="' + videoNew.attributes.src.value + '" autostart=true hidden=true></embed>';
-}
-
-
-
-
 </script>
+
+<script>
+@Override
+protected void onPause() {
+    super.onPause();
+    webView.onPause();
+}
+
+@Override
+protected void onResume() {
+    super.onResume();
+    webView.onResume();
+}</script>
 </html>
