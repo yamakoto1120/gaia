@@ -19,6 +19,12 @@ img.attr('src', 'https://www.youtube-nocookie.com/embed/videoseries?list=PLGzMK_
 img.attr('alt', 'Src: '+img.attr('src'));
 });
 </script>
-
+<!-- START: Mobile Autoplay Video -->
+<script>
+var mobilevideo = document.getElementsClass("plr")[0];
+mobilevideo.setAttribute("playsinline", "");
+mobilevideo.setAttribute("muted", "");
+</script>
+<!-- END: Mobile Autoplay Video -->
 
 </html>
