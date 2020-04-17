@@ -1,59 +1,60 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="edit-Type" edit="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>mediaelement.js YouTube Example - JSFiddle</title>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>mediaelement.js YouTube Example</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <meta name="robots" content="index, follow">
-      <meta name="googlebot" content="index, follow">
 
-      <script src="/js/embed/highlight.pack.js"></script>
-      <script src="/js/embed/embed.js"></script>
-      <link rel="stylesheet" media="screen" href="/css/embed/embed-light.css" />
+  <script
+    type="text/javascript"
+    src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+    
+  ></script>
 
-      <script type="text/javascript">
-        var height;
-        var force_height = null;
-        var slug = "Lae0sgtq";
-        var show_src = "//fiddle.jshell.net/Lae0sgtq/show/light/";
-        var resize_element_counter = 0;
-        var shell_edit_url = "/Lae0sgtq/light/";
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
-      </script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.13.2/js/mediaelement-and-player.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.13.2/css/mediaelementplayer.min.css">
 
-    <link rel="stylesheet" media="screen" href="//fonts.googleapis.com/css?family=Inconsolata" />
+  <style id="compiled-css" type="text/css">
+      
+  </style>
 
-    <style type="text/css" media="screen">
-    </style>
+</head>
+<body>
+    <video id="youtube1" width="640" height="360">
+  <source src="http://www.youtube.com/watch?v=nOEw9iiopwI" type="video/youtube">
+</video>
 
-  </head>
-  <body>
-    <div id="wrapper">
-        <header>
-          <h1><a href="//jsfiddle.net/Lae0sgtq/?utm_source=website&amp;utm_medium=embed&amp;utm_campaign=Lae0sgtq" target="_blank">Edit in JSFiddle</a></h1>
-          <div id="actions">
-            <ul class="normalRes">
-                <li class=&quot;active&quot;>
-                  <a data-trigger-type="result" href="#Result">Result</a>
-                </li>
-            </ul>
-            <div class="hl"></div>
-          </div>
-        </header>
 
-        <div id="tabs">
-              <div class="tCont result active" id="result"></div>
-                <script type="text/javascript">
-                  window.addEventListener('load', function(){
-                    if (typeof(EmbedManager) === undefined){
-                        EmbedManager.loadResult();
-                    }
-                  }, false);
-                </script>
-        </div>
-    </div>
-  </body>
+  <!-- TODO: Missing CoffeeScript 2 -->
+
+  <script type="text/javascript">//<![CDATA[
+
+
+jQuery(document).ready(function($) {
+  $('#youtube1').mediaelementplayer();
+});
+
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "Lae0sgtq"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+</body>
 </html>
