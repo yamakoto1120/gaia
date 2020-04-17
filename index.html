@@ -1,39 +1,19 @@
-<!DOCTYPE html><html lang=en-US><head><meta charset=UTF-8><meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="jquery-3.5.0.min.js"></script>
-
-</head>
-<title> </title>
-
+<!DOCTYPE html><html lang=en-US><head><meta charset=UTF-8><meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="jquery-3.5.0.min.js"></script><title> </title></head>
 <style>
 body,div,html{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}body{-webkit-text-size-adjust:none}@media screen and (max-width:480px){body,html{min-width:320px}}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit/*! padding: 0; *//*! border: aqua; *//*! border-style: double; */}body{background:#1b1f22}body.is-preload *,body.is-preload :after,body.is-preload :before{-moz-animation:0s!important;-webkit-animation:0s!important;-ms-animation:0s!important;animation:none!important;-moz-transition:0s!important;-webkit-transition:0s!important;-ms-transition:0s!important;transition:0s!important}html{font-size:16pt}@media screen and (max-width:1680px){html{font-size:12pt}}@media screen and (max-width:736px){html{font-size:11pt}}@media screen and (max-width:360px){html{font-size:10pt}}body{color:#ffffff91;font-family:"Source Sans Pro",sans-serif;font-weight:300;font-size:1rem;line-height:1.65}::-webkit-input-placeholder{color:rgba(255,255,255,.5)!important;opacity:1}:-moz-placeholder{color:rgba(255,255,255,.5)!important;opacity:1}::-moz-placeholder{color:rgba(255,255,255,.5)!important;opacity:1}:-ms-input-placeholder{color:rgba(255,255,255,.5)!important;opacity:1}#bg{-moz-transform:scale(1);-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-backface-visibility:hidden;position:fixed;top:0;left:0;width:100%;height:100vh;z-index:1}#bg:after,#bg:before{display:block;position:absolute;top:0;left:0;width:100%;height:100%}#bg:before{-moz-transition:background-color 0s ease-in-out;-webkit-transition:background-color 0s ease-in-out;-ms-transition:background-color 0s ease-in-out;transition:background-color 0s ease-in-out;-moz-transition-delay:0s;-webkit-transition-delay:0s;-ms-transition-delay:0s;transition-delay:0s;background-size:auto,256px 256px;background-position:center,center;background-repeat:no-repeat,repeat;z-index:2}#bg:after{-moz-transform:scale(1);-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-moz-transition:-moz-transform 0s ease-in-out,-moz-filter 0s ease-in-out;-webkit-transition:-webkit-transform 0s ease-in-out,-webkit-filter 0s ease-in-out;-ms-transition:-ms-transform 0s ease-in-out,-ms-filter 0s ease-in-out;transition:transform 0s ease-in-out,filter 0s ease-in-out;background-color:#000;background-position:center;background-size:cover;background-repeat:no-repeat;z-index:1}body.is-preload #bg:before{background-color:#000}body.is-preload #bg:before{background-color:transparent}body{animation:fadeInAnimation ease 0s;animation-iteration-count:1;animation-fill-mode:forwards}@keyframes fadeInAnimation{0%{opacity:0}100%{opacity:1}}#blocker{position:fixed;padding:0;margin:0;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,0);z-index:99}.plr{position:absolute;margin:0;left:50%;top:50%;transform:translate(-50%,-50%)}body{overlay:hidden;background-color:#000}</style>
-
-
-
-
-
 <body class="is-preload"><div id="bg">
-
-
-
-
-
-<iframe frameborder="0" data-lazy-type=iframe type="video/youtube" class="plr" playsinline scrolling="no" marginheight="0" marginwidth="0" width="100%" height="800%" type="text/html" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://mega.nz/embed/kLZFBYwR#z9Lzfw4Qodfu-41MFUKezj7bXYen5OYRNFMsdBCMeeI!1a"></iframe>
-
-
-
-
+<iframe frameborder="0" data-lazy-type=iframe type="video/youtube" class="plr" playsinline scrolling="no" marginheight="0" marginwidth="0" width="100%" height="200%" type="text/html" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src=""></iframe>
 </div></body>
-
-
-
-<!--
 <script>
 $('.plr').each(function() {
-var num = Math.floor(Math.random() * 1),
+var rdmv = [
+"https://mega.nz/embed/kLZFBYwR#z9Lzfw4Qodfu-41MFUKezj7bXYen5OYRNFMsdBCMeeI", 
+"https://mega.nz/embed/9LBXVK4J#XBZOC9VzW-KyaHJDuwOvr8TBr1_zLO7fYYchzMLX7d4",
+
+];
+var randomNumber = Math.floor(Math.random()*rdmv.length);
 img = $(this);
-img.attr('src', 'https://www.youtube-nocookie.com/embed/videoseries?list=PLGzMK_NF7H6TnZ18-dxtPpJ7abYYahl0x&loop=1&controls=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&playsinline=1&mute=0&autoplay=1&vq=hd1080&enablejsapi=1&mute=0&html5=1&index='+num);
-img.attr('alt', 'Src: '+img.attr('src'));
+img.attr('src', rdmv[randomNumber]);
 });
-</script> -->
+</script>
 </html>
