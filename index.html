@@ -1,5 +1,5 @@
 <!DOCTYPE HTML><html>
-<head><script src="jquery-3.5.0.min.js"></script><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"></head>
+<head><script src="jquery-3.5.0.min.js"></script><script src="video-bg-play-content.js"></script><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"></head>
 <title> </title>
 
 <style>
@@ -202,55 +202,6 @@ img = $(this);
 img.attr('src', 'https://www.youtube-nocookie.com/embed/videoseries?list=PLGzMK_NF7H6TnZ18-dxtPpJ7abYYahl0x&loop=1&controls=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&playsinline=1&mute=0&autoplay=1&vq=hd1080&enablejsapi=1&mute=0&index='+num);
 img.attr('alt', 'Src: '+img.attr('src'));
 });
-</script>
-
-<script>
-'use strict';
-
-const IS_YOUTUBE = window.location.hostname.search(/(?:^|.+\.)youtube.com/) > -1 ||
-                   window.location.hostname.search(/(?:^|.+\.)youtube-nocookie.com/) > -1;
-const IS_MOBILE_YOUTUBE = window.location.hostname == 'm.youtube.com';
-const IS_DESKTOP_YOUTUBE = IS_YOUTUBE && !IS_MOBILE_YOUTUBE;
-const IS_VIMEO = window.location.hostname.search(/(?:^|.+\.)vimeo.com/) > -1;
-
-const IS_ANDROID = window.navigator.userAgent.indexOf('Android') > -1;
-
-// Page Visibility API
-if (IS_ANDROID || !IS_DESKTOP_YOUTUBE) {
-  Object.defineProperties(document.wrappedJSObject,
-    { 'hidden': {value: false}, 'visibilityState': {value: 'visible'} });
-}
-
-window.addEventListener(
-  'visibilitychange', evt => evt.stopImmediatePropagation(), true);
-
-// Fullscreen API
-if (IS_VIMEO) {
-  window.addEventListener(
-    'fullscreenchange', evt => evt.stopImmediatePropagation(), true);
-}
-
-// User activity tracking
-if (IS_YOUTUBE) {
-  const refreshInterval = 5 * 60 * 1000; // every 5 minutes
-  waitForYoutubeLactInit(() => refreshLact(), refreshInterval);
-}
-
-function waitForYoutubeLactInit(aCallback, aCallbackInterval, aDelay = 1000) {
-  let pageWin = window.wrappedJSObject;
-  if (pageWin.hasOwnProperty('_lact')) {
-    window.setInterval(aCallback, aCallbackInterval);
-  } else {
-    window.setTimeout(() => waitForYoutubeLactInit(aCallback,
-                                                   aCallbackInterval,
-                                                   aDelay * 2),
-                      aDelay);
-  }
-}
-
-function refreshLact() {
-  window.wrappedJSObject._lact = Date.now();
-}
 </script>
 
 
