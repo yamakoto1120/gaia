@@ -7,8 +7,6 @@ body,div,html{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-a
 </div></body>
 
 <script>
-$.get("http://www.random.org/integers/?num=1&min=1&max=45&col=1&base=10&format=plain&rnd=new", function(data, status){
-var rnumb = parseInt(data)
 var rdmv = [
 "https://mega.nz/embed/RGZADKjR#NxJ2-98l5KOXdlbhYDfjyATrnE8HubVX1xB8PB5fkC4",
 "https://mega.nz/embed/tTAgTQLa#EhXeMpduntDtFMm2PXqcAZKOaHZ6LHJOf92rmxzG-U0",
@@ -58,7 +56,8 @@ var rdmv = [
 
 
 ];
-$('#plrr').attr('src', rdmv[rnumb]);
-});
+
+var randomNumber = Math.floor(Math.random()*rdmv.length);
+$('#plrr').attr('src', rdmv[randomNumber]);
 </script>
 </html>
