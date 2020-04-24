@@ -6,8 +6,7 @@ body,div,html{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-a
 <iframe frameborder="0" marginheight="0" marginwidth="0" id="plrr" type="video/youtube" playsinline scrolling="no"  width="100%" height="110%" src=""></iframe>
 </div></body>
 
-<script>
-$(document).ready(function(){
+<script >
 $.get("http://www.random.org/integers/?num=1&min=1&max=45&col=1&base=10&format=plain&rnd=new", function(data, status){
 var rnumb = parseInt(data)
 var rdmv = [
@@ -60,7 +59,6 @@ var rdmv = [
 
 ];
 $('#plrr').attr('src', rdmv[rnumb]);
-});
 });
 </script>
 </html>
