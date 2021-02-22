@@ -1,23 +1,14 @@
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GAIA</title>
 <style>
-<style>
-
-
-
-
-
-body {
-  background: #ffffff; }
-  body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important; }
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+-moz-animation: none !important;
+-webkit-animation: none !important;
+-ms-animation: none !important;
+animation: none !important;
+-moz-transition: none !important;
+-webkit-transition: none !important;
+-ms-transition: none !important;
+transition: none !important;}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -30,138 +21,88 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+footer, header, hgroup, menu, nav, section {display: block;}
 
-body {
-  line-height: 1; }
-
-
-
-
-body{
-width:100%;
-height:100%;
-  background:#fff;
-  background: linear-gradient(to right bottom, #fff 50%, #000 50%);
-}
-
-
+body{line-height: 1;width:100%;height:100%;background:#fff;background: linear-gradient(to right bottom, #fff 50%, #000 50%);}
 
 .yinyang {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  background: #fff;
-  height: 100px;
-  border-color: #000;
-  border-style: solid;
-  width: 50px; 
-  border-width: 0px 50px 0px 0px;
-  border-radius: 50%;
-  animation: roll 10000s infinite;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -50px;
+margin-left: -50px;
+background: #fff;
+height: 100px;
+border-color: #000;
+border-style: solid;
+width: 50px; 
+border-width: 0px 50px 0px 0px;
+border-radius: 50%;
+animation: roll 10000s infinite;
 -moz-animation: roll 10000s infinite;
 -webkit-animation: roll 10000s infinite;
-
-  animation-play-state: paused;
+animation-play-state: paused;
 -webkit-animation-play-state: paused;
--moz-animation-play-state: paused;
-} 
+-moz-animation-play-state: paused;}
+
 .yinyang:hover {
-  animation-play-state: running;
+animation-play-state: running;
 -webkit-animation-play-state: running;
--moz-animation-play-state: running;
+-moz-animation-play-state: running;} 
 
-} 
 .yinyang:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #fff;
-  border: 18px solid #000;
-  border-radius: 50%;
-  width: 14px;
-  height: 14px;
-  }
-
+content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+background: #fff;
+border: 18px solid #000;
+border-radius: 50%;
+width: 14px;
+height: 14px;}
 
 .yinyang:after {
-  content: '';
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  background: #000;
-  border: 18px solid #fff;
-  border-radius: 50%;
-  width: 14px;
-  height: 14px;
-}
-
+content: '';
+position: absolute;
+top: 0%;
+left: 50%;
+background: #000;
+border: 18px solid #fff;
+border-radius: 50%;
+width: 14px;
+height: 14px;}
 
 @-webkit-keyframes roll {
-  from {
-    transform:rotate(65deg) ;
-  }
-  to {
-    transform:rotate(3600000deg);
-  }
-}
-
+from {transform:rotate(65deg);}
+to {transform:rotate(3600000deg);}}
 
 @-moz-keyframes roll {
-  from {
-    transform:rotate(65deg) ;
-  }
-  to {
-    transform:rotate(3600000deg);
-  }
-}
+from {transform:rotate(65deg);}
+to {transform:rotate(3600000deg);}}
 
 @keyframes roll {
-  from {
-    transform:rotate(65deg) ;
-  }
-  to {
-    transform:rotate(3600000deg);
-  }
-}
-div{  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.4s linear;
+from {transform:rotate(65deg);}
+to {transform:rotate(3600000deg);}}
 
-}
+div{visibility: hidden;opacity: 0;transition: visibility 0s, opacity 0.4s linear;}
 
-
-:target{  visibility: visible;
-  opacity: 1;
-   
-}
+:target{visibility: visible;opacity: 1;}
 
 #zzz{color:red;}
-
-
-
 </style>
 <body>
 
-							<div id="lol">LOLLOLLOL
-<p id="zzz"> P </p>
-
-LOLLOL</div>
+<div id="lol">LOLLOLLOL <p id="zzz"> P </p> LOLLOL</div>
 
 <div id="ha">HAHAHAHAHAHHAHA</div>
-
 
 <p class="yinyang"></p>
 
@@ -170,5 +111,6 @@ LOLLOL</div>
 <a href="#lol">Click for LOL</a>
 <a href="#ha">Click for HA</a>
 <p> this is a simple html test of various design styles. </p>
+
 </body>
 </html>
