@@ -32,7 +32,12 @@ vertical-align: baseline;}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {display: block;}
 
-body{line-height: 1;width:100%;height:100%;background:#fff;background: linear-gradient(to bottom, #fff 50%, #000 50%);}
+body{
+line-height: 1;
+width:100%;
+height:100%;
+background:#fff;
+background: linear-gradient(to bottom, #fff 50%, #000 50%);}
 
 .yinyang {
 position: absolute;
@@ -91,69 +96,163 @@ p{visibility: hidden;opacity: 0;transition: visibility 0s, opacity 1s linear;
 padding-top:66px;padding-bottom:66px;}
 
 :target{visibility: visible;opacity: 1;}
-
 #zzz{color:red;}
-
 #cont{
-position:absolute;
-
-top:3%;
-bottom:3%;
-left:6%;
-right:6%;
+width:90%;
+height:100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 z-index:2;
 overflow: hidden;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 19px;
 letter-spacing: 0px;
 text-align:justify;
+font-weight: 400;
+text-decoration: rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: lowercase;
+line-height: 35px;}
+#cont:hover{cursor: default;}
+#contw{
+width:100%;
+height:50%;
+overflow:auto;
+z-index:10;
+color:#000;
+position: absolute;
+top: 0%;
+left: 50%;
+transform: translate(-50%, -0%);}
+#contw::-webkit-scrollbar {display: none;}
+#contw {-ms-overflow-style: none; scrollbar-width: none;}
+#contb::-webkit-scrollbar {display: none;}
+#contb {-ms-overflow-style: none; scrollbar-width: none;}
+#contb{
+width:100%;
+height:50%;
+overflow:auto;
+z-index:10;
+color:white;
+color:#fff;
+position: absolute;
+bottom: 0%;
+left: 50%;
+transform: translate(-50%, -0%);}
+#fadew{
+width:100%;
+height:10%;
+position: absolute;
+background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+z-index:15;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);}
+#fadeb{
+width:100%;height:10%;
+position: absolute;
+top: 55%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+z-index:15;}
 
+
+
+#contwd{
+width:100%;
+height:50%;
+overflow:auto;
+z-index:5;
+color:#000;
+position: absolute;
+top: 0%;
+left: 50%;
+transform: translate(-50%, -0%);}
+#contwd::-webkit-scrollbar {display: none;}
+#contwd {-ms-overflow-style: none; scrollbar-width: none;}
+#contbd::-webkit-scrollbar {display: none;}
+#contbd {-ms-overflow-style: none; scrollbar-width: none;}
+#contbd{
+width:100%;
+height:50%;
+overflow:auto;
+z-index:5;
+color:white;
+color:#fff;
+position: absolute;
+bottom: 0%;
+left: 50%;
+transform: translate(-50%, -0%);}
+
+
+
+
+
+
+#about{
+visibility: hidden;
+border-radius: 25px;
+opacity: 0;
+padding:2% 5% 2% 5%;
+transition: visibility 0s, opacity 1s linear;
+width:90%;
+height:90%;
+position: absolute;
+top: 50%;
+left: 50%;
+background-color:black;
+transform: translate(-50%, -50%);
+z-index:999;
+overflow: hidden;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 19px;
+letter-spacing: 0px;
+text-align:justify;
 font-weight: 400;
 text-decoration: rgb(68, 68, 68);
 font-style: normal;
 font-variant: small-caps;
 text-transform: lowercase;
 line-height: 35px;
+color:white;
 }
-#cont:hover{   cursor: default;}
-
-#contw{width:100%;height:50%;overflow:auto;padding-right: 17px;z-index:10;color:#000;}
-#contwt{margin-top:-66px;}
-
-#contb{width:100%;height:55%;overflow:auto;padding-right: 17px;z-index:10;color:white;color:#fff;}
-#contbt{margin-bottom:-66px;}
-
-
-
-
-#fadew{position:absolute;
-width:100%;height:15%;
-position: absolute;
-bottom: 50%;
-background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
-z-index:15;
-}
-
-#fadeb{position:absolute;
-width:100%;height:15%;
-position: absolute;
-top: 50%;
-background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
-z-index:15;
-}
-
-#about{}
-
+#about:target{visibility: visible;opacity: 0.8;}
 
 </style>
 <body>
 
-<div id="cont">
-<div id="fadew"></div>
 
+
+
+<div id="cont">
+
+
+<div id="contwd">
+as has foasfhasjkfhjashf uiashfidsgfgds
+
+
+</div>
+
+
+<div id="contbd">
+aa has foasfhasjkfhjashf uiashfidsgfgds
+
+
+</div>
+
+
+<div id="fadew"></div>
+<div id="fadeb"></div>
+
+
+<div id="about" onclick="location.href='#';"> fhdsghdsgh dsjdsgfjdg sdhgfds </div>
 
 <div id="contw">
-<div id="contwt">
+
 
 <p id="ha_y">
 The standard Lorem Ipsum passage, used since the 1500s
@@ -179,12 +278,12 @@ Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
 
 
-</div></div>
+</div>
 
-<div id="fadeb"></div>
+
 
 <div id="contb">
-<div id="contbt">
+
 
 
 
@@ -212,8 +311,9 @@ Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 </p>
 
 
-</div></div>
+</div>
 
-<div class="yinyang" onclick="location.href='#ha_x';"></div>
+<div class="yinyang" onclick="location.href='#about';"></div>
+
 </body>
 </html>
