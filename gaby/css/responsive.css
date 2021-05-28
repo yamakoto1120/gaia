@@ -140,7 +140,11 @@
 
 @media (max-width: 480px) {
     /*  fixed navigation  */
-    .navbar-fixed-top .navbar-collapse { max-height: 100%; }
+
+    .navbar-fixed-top .navbar-collapse { max-height: 100%; animation: fadein 1s;
+-moz-animation: fadein 1s; /* Firefox */
+-webkit-animation: fadein 1s; /* Safari and Chrome */
+-o-animation: fadein 1s; /* Opera */}
 
     /*  scroll to top  */
     .scrollTop { display: none !important; }

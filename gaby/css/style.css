@@ -106,7 +106,11 @@ h1, h2, h3, h4, h5, h6 { color: #000; text-transform: uppercase; margin:0px; pad
 /* ----------------------------------
    06 - Navigation
 ---------------------------------- */
-.main-logo { max-width: 285px;margin-top:5px; }
+.main-logo { max-width: 20vw;margin-top:4px; padding-bottom:8px;}
+@media screen and (max-width: 1600px) {.main-logo { max-width: 25vw; }}
+@media screen and (max-width: 1199px) {.main-logo { max-width: 30vw; }}
+@media screen and (max-width: 991px) {.main-logo { max-width: 45vw; }}
+@media screen and (max-width: 600px) {.main-logo { max-width: 65vw; }}
 nav { top: 0px; width: 100%; z-index: 99;}
 nav .container{ display: table-cell; vertical-align: middle; position: relative; }
 .shrink-nav .container {  }
@@ -114,7 +118,11 @@ nav .container{ display: table-cell; vertical-align: middle; position: relative;
 .shrink-nav { background-color:#000; border-bottom: 0px;}
 .fix-nav .color-logo {display: none; opacity: 0; }
 .shrink-nav .color-logo { opacity: 1; height: 60px; vertical-align: middle; display: table-cell; }
-.nav-white.fix-nav .navbar-nav li a { color: #dcdcdc;letter-spacing:3px;font-size:15px;  font-weight: normal;margin: 0px 0px 0px 0px;  margin-left:8px;}
+.nav-white.fix-nav .navbar-nav li a { color: #dcdcdc;letter-spacing:3px;font-size:1vw;  font-weight: normal;margin: 0px 0px 0px 0px;  margin-left:8px;	letter-spacing: .3em;}
+@media screen and (max-width: 1600px) {.nav-white.fix-nav .navbar-nav li a { font-size:1vw; 	letter-spacing: .3em;}}
+@media screen and (max-width: 1199px) {.nav-white.fix-nav .navbar-nav li a { font-size:1vw; 	letter-spacing: .3em;}}
+@media screen and (max-width: 991px) {.nav-white.fix-nav .navbar-nav li a { font-size:19px;	letter-spacing: .3em; }}
+@media screen and (max-width: 600px) {.nav-white.fix-nav .navbar-nav li a { font-size:16px; 	letter-spacing: .3em;}}
 .nav-white.fix-nav .navbar-nav li a:hover { color: #fff}
 .nav-white.shrink-nav .navbar-nav li a { color: #dcdcdc}
 .nav-white.fix-nav .navbar-nav li a:hover  { border-bottom-color: #fff}
