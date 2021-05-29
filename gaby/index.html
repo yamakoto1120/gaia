@@ -164,9 +164,9 @@
                         <!-- photography filter -->
                         <ul class="xs-text-center sm-text-center grid-filter nav nav-tabs portfolio-navigation">
                             <li class="nav active"> <a href="#" data-filter="*">All</a> </li>
-                            <li class="nav"> <a href="#" data-filter=".portrait">Portrait</a> </li>
-                            <li class="nav"> <a href="#" data-filter=".fashion">Fashion</a> </li>
-                            <li class="nav"> <a href="#" data-filter=".wedding">Wedding</a> </li>
+                            <li class="nav"> <a href="#" data-filter=".portrait">Weddings</a> </li>
+                            <li class="nav"> <a href="#" data-filter=".fashion">Events</a> </li>
+                            <li class="nav"> <a href="#" data-filter=".wedding">Extras</a> </li>
                         </ul>
                         <!-- end photography filter -->
                     </div>
@@ -327,24 +327,28 @@
             <div class="row">
                 <!-- section title -->
                 <div class="col-md-12 text-center zero-padding">
-                    <h3 class="section-heading">about me</h3>
+                    <h3 class="section-heading">about us</h3>
                 </div>
                 <!-- end section title -->
             </div>
             <div class="row margin-top-5">
                 <div class="col-md-6 col-sm-6 sm-margin-btm-ten">
                     <div class="col-md-12 col-sm-12 zero-padding xs-text-center">
-                        <h3 class="text-gray margin-btm-60">Welcome !</h3>
-                        <p class="text-gray">I offer a very friendly, flexible and professional service to capture beautiful memories of your special day. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                            <br>
-                            <br>Nascetur ridiculus musvulputate eleifend tellus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                            <br>
-                            <br>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p><br>
-                        <span class="text-uppercase text-black letter-spacing2 display-block font-weight6">John Brad</span>
+                        <h3 class="text-gray margin-btm-60">A MOMENT THAT LASTS FOREVER</h3>
+                        <p class="text-gray">My passion for photography stems from my childhood when I was inspired by my father.<br><br>
+In the evenings when other people would go to the theatre or the cinema, both my dad and brother used to transform our kitchen into a mysterious lab where film would go in and pictures where coming out.
+<br><br>The process was complicated and required patience: at first, the film needed to be treated with a chemical agent to make the images appear, then the 36 frames of it would have go on special paper in order to prepare them for the photo album life. After many hours of work (sometimes all night long) I would find in the morning, hanging on the drying rope or even dried with the mirrored dryer, some black and white photos that our father had taken of us.
+Usually using a Leica or a Fed manual camera where the subject had to sit for a few minutes for correct adjustment of the lens, my father managed to capture the happy moments of our childhood. Thanks to my parents collection of family photos, I am today in possession of some photos taken over 100 years ago.
+<br><br>For my father photography was a hobby, for me it became a passion.
+I started my career as a photojournalist, with an automatic camera that today  I could display in a museum (it had a floppy disk).  Most photos were administrative-political, but my passion remained the portrait.
+Years after experiencing many types of photography I decided to specialise in wedding photography.
+Why did I stop at the wedding photography? Because it&#8217;s one of the happiest moments of people’s life and I like to be there. Because I can photograph the beauty of a bride on her most glorious day, because I like to “write” with images showing the happiness of a family.
+And because capturing the moment on paper is the only thing that might last forever.</p><br><br>
+                        <span class="text-uppercase text-black letter-spacing2 display-block font-weight6">Gaby Laibach</span>
                         <span class="text-uppercase letter-spacing2 display-block">Photographer</span>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 text-center zero-padding"> <img src="http://placehold.it/630x638" alt="" /> </div>
+                <div id="aboutpix" class="col-md-6 col-sm-6 text-center zero-padding"> <img src="http://placehold.it/630x638" alt="" /><br><br><img src="http://placehold.it/630x638" alt="" /> </div>
             </div>
         </div> 
     </section>
@@ -366,16 +370,43 @@
             <div class="row">
                 <!-- section title -->
                 <div class="col-md-12 text-center zero-padding">
-                    <h3 class="section-heading">Contact</h3>
+                    <h3 class="section-heading">WHY NOT BOOK A WEDDING OR EVENT</h3>
+					<p class="text-gray">Get in touch with us today to discuss a tailor made package that will fit your requirements.
+<br>
+Please let us know what is your event, date and location to the following:
+<br>
+<a href="tel:07754355925">Telephone: 07754355925</a>	<br>
+<a href="mailto:info@weddigraphy.co.uk">Email Us: info@weddigraphy.co.uk</a>
+</p>
                 </div>
                 <!-- end section title -->
             </div>
             <div class="row margin-top-5">
                 <!-- form -->
-                <form id="contactusform" action="javascript:void(0)" method="post">
+				
+				
+				
+				<form action="https://formspree.io/f/{form_id}" method="post">
+  <label for="email">Your Email</label>
+  <input name="Email" id="email" type="email">
+  <button type="submit">Submit</button>
+</form>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+                <form id="contactusform" action="https://formspree.io/f/{form_id}" method="post">
                     <div id="alert" class="zero-lr-margin"></div>
                     <div class="col-md-6 col-sm-12 text-center center-col xs-margin-btm-ten">
                         <input name="name" type="text" placeholder="Name" />
+						<input name="number" type="text" placeholder="Number" />
                         <input name="email" type="text" placeholder="Email" />
                         <textarea name="comment" placeholder="Tell us about your big day"></textarea>
                         <input id="btn-contact" name="send" type="button" value="send message" class="margin-top-zero btn btn-black zero-margin-lr"> </div>
@@ -392,7 +423,15 @@
             <div class="container">
                 <div class="row margin-top-btm-3">
                     <!-- rights -->
-                    <div class="col-md-6 col-sm-6 col-xs-12 text-left letter-spacing1 xs-text-center xs-margin-btm-one rights"> &copy; 2016 &dash; All rights reserved. </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-left letter-spacing1 xs-text-center xs-margin-btm-one rights"> Gaby Laibach Photography <br>
+
+Wedding & Event Photography
+Based in East Sussex
+<br>
+07754 355925
+<br>
+info@weddigraphy.co.uk
+ </div>
                     <!-- end rights -->
                     <div class="col-md-6 col-sm-6 col-xs-12 xs-text-center xs-margin-btm-one footer-icons text-right">
                         <!-- social media icons -->

@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 { color: #000; text-transform: uppercase; margin:0px; pad
 .text-white { color:#fff !important; } 
 .text-black { color:#000 !important; }
 .text-light-gray { color: #adadad !important; }
-.text-gray { color:#898888 !important; }
+.text-gray { color:#898888 !important; font-size:15px;  line-height: 28px; }
 .text-dark-gray { color:#3e3e3e !important;}
 
 /* Font Weight */
@@ -348,7 +348,7 @@ footer { clear:both; background: #ededed}
 /* icon */
 i { margin: 0 4px; color: #dcdcdc;}
 .small-icon { font-size: 24px !important;}
-
+#aboutpix {height:100%}
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
   nav * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
 }

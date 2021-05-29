@@ -765,6 +765,10 @@ pre code {
     padding-left: 25px;
     margin-right: auto;
     margin-left: auto;
+		    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
 }
 @media (min-width: 768px) {
     .wide-container {
@@ -2944,7 +2948,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin:15px 32px;
     outline:none;
     letter-spacing:2px;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
     border-bottom: 1px solid transparent;
 
@@ -5686,8 +5690,8 @@ transform: scale(1, 1.05);
 	line-height: 150%;
 font-weight: 500 !important;
 text-transform: uppercase !important;
-	text-shadow: 0px 0px 5px #454545;
-	  -webkit-text-stroke-color: #5c5c5c;
+	text-shadow: 0px 0px 5px #000;
+	  -webkit-text-stroke-color: #000;
 }
 
 @media screen and (max-width: 1600px) {#opening_2 p{ font-size:21px; }}
