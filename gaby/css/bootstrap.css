@@ -788,10 +788,10 @@ pre code {
 }
 @media (min-width: 1200px) {
     .container {
-        width: 80%;
+        width: 90%;
     }
     .wide-container {
-        width:90%;
+        width:95%;
         padding:0;
         margin:0;
         overflow: hidden;
@@ -5649,12 +5649,12 @@ button.close {
     -webkit-animation: fadein 8s; /* Safari and Chrome */
     -o-animation: fadein 8s; /* Opera */
     color:#fff;
-	margin: 370px 0px 0px 8%;
+	margin: 175px 0px 0px 8%;
 	text-align: left;
 	letter-spacing: 10px;
 	font-family: Garamond, serif;
 	font-size:6vw;
-	line-height: 90%;
+	line-height: 100%;
 	font-weight: 600 !important;
 	text-transform: uppercase !important;
 	transform: scale(1, 1.05);
@@ -5683,7 +5683,7 @@ button.close {
     -webkit-animation: fadein 11s; /* Safari and Chrome */
     -o-animation: fadein 11s; /* Opera */
     color:#fff;
-	margin: 315px 0px 0px 8%;
+	margin: 120px 0px 0px 8%;
 	text-align: left;
 	letter-spacing: .3em;
 	font-size:21px;
