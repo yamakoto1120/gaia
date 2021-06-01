@@ -68,17 +68,18 @@ ul { padding: 0px; list-style: none outside none; margin: 0px;}
    04 - Typography
 ---------------------------------- */
 /* Section Heading */
-.section-heading{ font-size: 25px; padding-bottom:16px; text-transform: uppercase; font-weight: 700; letter-spacing: 1.8px;}
+.section-heading{ font-size: 48px; padding-bottom:16px; text-transform: uppercase; font-weight: 700; letter-spacing: 1.8px;line-height:54px;}
 
 /* Heading */
-h1 { font-size:47px; line-height:44px; letter-spacing: 1.9px;}
-h2 { font-size:39px; line-height:44px; letter-spacing:inherit;}
-h3 { font-size:33px; line-height:39px; letter-spacing: 1.9px;}
-h4 { font-size:24px; line-height:29px; letter-spacing: 1px;}
-h5 { font-size:21px; line-height:24px; letter-spacing: 1.4px;}
-h6 { font-size:19px; line-height:24px; letter-spacing: 1px;}
+h1 { font-size:47px; line-height:44px; letter-spacing: 1.9px;font-family: Garamond, serif;}
+h2 { font-size:39px; line-height:44px; letter-spacing:inherit;font-family: Garamond, serif;}
+h3 { font-size:33px; line-height:39px; letter-spacing: 1.9px;font-family: Garamond, serif;}
+h4 { font-size:24px; line-height:29px; letter-spacing: 1px;text-align:center;}
+h5 { font-size:21px; line-height:24px; letter-spacing: 1.4px;font-family: Garamond, serif;}
+h6 { font-size:19px; line-height:24px; letter-spacing: 1px;font-family: Garamond, serif;}
 h1, h2, h3, h4, h5, h6 { color: #000; text-transform: uppercase; margin:0px; padding:0px; }
-
+h7 { font-size:39px; line-height:44px; letter-spacing: 1px;font-family: Garamond, serif;color:#616161;text-align:center;margin-left:auto;}
+h8 { font-size:29px; line-height:34px; letter-spacing: 1px;font-family: Garamond, serif;color:#616161;text-align:center;}
 /* Letter Spacing */
 .letter-spacing1 { letter-spacing:1px !important; }
 .letter-spacing2 { letter-spacing:2px !important; }
@@ -87,7 +88,35 @@ h1, h2, h3, h4, h5, h6 { color: #000; text-transform: uppercase; margin:0px; pad
 .text-white { color:#fff !important; } 
 .text-black { color:#000 !important; }
 .text-light-gray { color: #adadad !important; }
-.text-gray { color:#898888 !important; font-size:15px;  line-height: 28px; }
+.text-gray { color:#898888 !important; font-size:16px;  line-height: 28px; margin-left:17px; margin-right:17px;margin-bottom:20px;}
+.text-grayy { color:#666666 !important; font-size:16px;  line-height: 28px;padding-left:20px; padding-right:20px;margin-bottom:80px;text-align:center;}
+.text-grayyy { color:#666666 !important; font-size:16px;  line-height: 28px;padding-left:20px; padding-right:20px;margin-bottom:80px;text-align:left;}
+#services h3{text-align:center;font-size:38px;margin-bottom:30px;line-height: 58px;}
+.serviceimgs{width:80%;height:200px;margin-left:10%;margin-right:10%;margin-bottom:35px;background-position: center; background-size:cover;background-repeat: no-repeat;    
+
+	border-radius: 15px;
+	transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease;box-shadow: inset 0 0 133px white;
+}
+
+
+.serviceimgss{ 
+  width: 35%;height:200px;margin-left:10%;margin-right:10%;margin-bottom:35px;background-position: center; background-size:contain;background-repeat: no-repeat;    
+
+	border-radius: 50px;
+	transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; margin: auto;
+}
+.aboutimgs{ width:60%;height:200px;margin-left:auto;margin-right:auto;background-position: center; background-size:100%;   
+
+	border-radius: 520px;
+	
+	
+	}
+
+
+	#services h6{margin-left:17px; margin-right:17px;color:#898888;}
+
+.synapse{height:220px;position:relative;}
+
 .text-dark-gray { color:#3e3e3e !important;}
 
 /* Font Weight */
@@ -162,7 +191,7 @@ nav .container{ display: table-cell; vertical-align: middle; position: relative;
 .bg-fix { background-size: cover !important; position: relative; overflow: hidden; background-position: center center; background-repeat: no-repeat !important; background-attachment: fixed !important; }
 .review-section p { letter-spacing: 1px; color: #fff; margin:29px 0 19px; font-size:14px; line-height:22px;}
 .review-section img { margin-top: 10px; border-radius: 50%; max-width: 120px; box-shadow: 0 0 0 5px #878787,0 0 0 4px #e8e8e8;}
-.review-section .client{ text-transform: uppercase; font-size:13px; display:block; width:100%; color: #828282; letter-spacing: 1.8px;}
+.review-section .client{ text-transform: uppercase; font-size:13px; display:block; width:90%; margin-left:auto;margin-right:auto;color: #828282; letter-spacing: 1.8px;}
 
 /* ----------------------------------
    10 - Counter Settings
@@ -204,7 +233,7 @@ nav .container{ display: table-cell; vertical-align: middle; position: relative;
 .portfolio-navigation li:first-child a{ margin-right: 29px}
 .portfolio-navigation li:last-child a{ margin-left: 29px;}
 .portfolio-navigation { height: 64px}
-.portfolio-navigation li a { margin: 0px 30px}
+.portfolio-navigation li a { margin: 0px 30px;font-size:14px;}
 .portfolio-grid ul { margin-right:1px; }
 .portfolio-navigation a { color: #929191; font-size: 12px; }
 .grid li  {transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s;}
@@ -228,9 +257,9 @@ figure:hover img { -ms-transform: scale(1.03,1.03); -webkit-transform: scale(1.0
 /* ----------------------------------
    13 - Button Settings
 ---------------------------------- */
-.btn { display: inline-block; border: 1px solid transparent; margin-right: 20px; letter-spacing: 2px; }
+.btn { display: inline-block; border: 1px solid transparent; margin-right: 20px; letter-spacing: 3px; }
 .btn.btn-small { font-size: 11px; padding: 4px 14px; letter-spacing: 1.2px;}
-.btn-black{ border: 1px solid #000; color: #fff; display: inline-block; background-color: #000; padding: 9px 20px 9px; width: auto;}
+.btn-black{ border: 1px solid #000; color: #fff; display: inline-block; background-color: #000; padding: 9px 20px 9px; width: auto;margin-bottom:65px;cursor:pointer;}
 .btn-black:hover {border: 1px solid #000;  color: #000; background-color: transparent}
 .btn-center { margin: 24px auto 0px auto !important;}
 
@@ -352,3 +381,20 @@ i { margin: 0 4px; color: #dcdcdc;}
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
   nav * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
 }
+#readmore_evn:hover{cursor:pointer;}
+#readmore_evn a{text-align:center;}
+#readmore_wed:hover{cursor:pointer;}
+#readmore_wed a{text-align:center;}
+#readmore_ext:hover{cursor:pointer;}
+#readmore_ext a{text-align:center;}
+
+#more_wed {display: none;}
+#more_evn {display: none;}
+#more_ext {display: none;}
+
+
+
+
+
+
+
