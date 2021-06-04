@@ -16,6 +16,37 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     <!-- bootstrap -->
+	<style>
+	.preloader {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; background-color: #171717; }
+	.preloader img {display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: 50px; height: 50px; margin: auto;}
+	body  { -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 1s;
+	-ms-animation: fadein 1s;
+	-o-animation: fadein 1s;
+	animation: fadein 1s;
+	background-color:#000;}
+
+	@keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+	@-moz-keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+	@-webkit-keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+	@-ms-keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+	@-o-keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+	</style>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- animations -->
     <link rel="stylesheet" href="css/animate.css" />
@@ -37,10 +68,7 @@
     <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
-		<style>
-		.preloader {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; background-color: #171717; }
-.preloader img {display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: 50px; height: 50px; margin: auto; }
-		</style>
+
 </head>
 
 <body>
@@ -75,7 +103,7 @@
                 </div>
                 <!-- end toggle navigation -->
                 <div class="col-md-9 text-right">
-                    <div class="navbar-collapse collapse fade">
+                    <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#services" class="internal-link active">services</a> </li>
                             <li><a href="#portfolio" class="internal-link">portfolio</a> </li>
