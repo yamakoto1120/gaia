@@ -10,7 +10,7 @@ $(document).ready(function () {
     // Initialize functions after elements are loaded
     $(window).load(function() {
     $('.preloader img').fadeOut(); // will first fade out the loading animation
-    $('.preloader').delay(320).fadeOut('slow', function() {
+    $('.preloader').delay(420).fadeOut('slow', function() {
         });
     });
 /* ---------------------------------------------------- */
