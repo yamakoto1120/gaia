@@ -28,6 +28,7 @@
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+	background-color:#000;
 }
 .owl-carousel .owl-wrapper-outer.autoHeight{
 	-webkit-transition: height 500ms ease-in-out;
@@ -43,7 +44,7 @@
 }
 .owl-carousel.light-pagination .owl-item{
 	float: left;
-        cursor: url("../images/icon-move-light.png"), move;
+        cursor: default;
 }
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{

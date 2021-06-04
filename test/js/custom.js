@@ -25,8 +25,8 @@ $(document).ready(function () {
     $("#main-slider").owlCarousel({
         transitionStyle : "fade",
         navigation: true, 
-        slideSpeed: 200,
-        paginationSpeed: 300,
+        slideSpeed: 1000,
+        paginationSpeed: 500,
         singleItem: true,
         navigationText: ["<i class='fa fa-caret-left'></i>", "<i class='fa  fa-caret-right'></i>"]
     });
@@ -224,7 +224,7 @@ $(document).ready(function () {
 // Internal Links - start
 /* ---------------------------------------------------- */
     $('.internal-link').smoothScroll({
-        speed: 700,
+        speed: 0,
         offset: -0
     });
 /* ---------------------------------------------------- */

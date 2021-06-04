@@ -140,7 +140,7 @@
 
 @media (max-width: 480px) {
     /*  fixed navigation  */
-    .navbar-fixed-top .navbar-collapse { max-height: 425px; }
+    .navbar-fixed-top .navbar-collapse {}
 
     /*  scroll to top  */
     .scrollTop { display: none !important; }

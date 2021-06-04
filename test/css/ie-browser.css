@@ -6,7 +6,7 @@ nav .container { display: block;}
 
 /* carousels */
 .owl-carousel .item{ cursor: url("images/icon-move.cur"), default;}
-.owl-carousel.light-pagination .item{ cursor: url("images/icon-move-light.cur"), default;}
+.owl-carousel.light-pagination .item{ cursor: pointer;}
 
 /* portfolio */
 figure:hover img { cursor: url("images/icon-zoom-white.cur"), pointer;}
