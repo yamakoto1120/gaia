@@ -106,17 +106,17 @@ h1, h2, h3, h4, h5, h6 { color: #000; text-transform: uppercase; margin:0px; pad
 /* ----------------------------------
    06 - Navigation
 ---------------------------------- */
-.main-logo { max-width: 109px; }
+.main-logo { max-width: 250px; }
 nav { top: 0px; width: 100%; z-index: 99;}
 nav .container{ display: table-cell; vertical-align: middle; height: 79px; position: relative; }
 .shrink-nav .container { height: 60px; }
 .fix-nav{ top: 0px; display: inline-table; position: fixed;}
-.shrink-nav { background-color:#fff; border-bottom: 1px solid #e8e8e8; }
+.shrink-nav { background-color:#000; border-bottom: 1px solid #e8e8e8; }
 .fix-nav .color-logo {display: none; opacity: 0; }
 .shrink-nav .color-logo { opacity: 1; height: 55px; vertical-align: middle; display: table-cell; }
-.nav-white.fix-nav .navbar-nav li a { color: #fff}
+.nav-white.fix-nav .navbar-nav li a { color: #000}
 .nav-white.shrink-nav .navbar-nav li a { color: #868585}
-.nav-white.fix-nav .navbar-nav li a:hover  { border-bottom-color: #fff}
+.nav-white.fix-nav .navbar-nav li a:hover  { border-bottom-color: #000}
 .fix-nav .white-logo { vertical-align: middle; height: 53px; display: table-cell;}
 .shrink-nav .white-logo { opacity: 0; display: none}
 .nav-white.shrink-nav .navbar-nav li a:hover { color:#000; border-bottom-color: #000}
@@ -337,7 +337,7 @@ footer { clear:both; background: #ededed}
 .btm-border{ border-bottom:1px solid #e8e8e8 ;}
 
 /* icon */
-i { margin: 0 4px; color: #9f9e9e;}
+i { margin: 0 4px; color: #fff;}
 .small-icon { font-size: 24px !important;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
