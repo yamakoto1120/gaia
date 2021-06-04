@@ -15,7 +15,7 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     /* portfolio navBar for iPad layouts */
     .navbar-nav > li > a { border-color: transparent !important; }
-    .navbar-nav > li > a.active { border-color: black !important; }
+    .navbar-nav > li > a.active { border-color: white !important; }
 }
 
 @media (max-width: 1024px) {
@@ -63,8 +63,8 @@
     .navbar-default .navbar-nav > li > a { display: block; color: #dcdcdc; height: 55px; line-height: 55px; padding: 0px 0px 0px 15px; text-align: left; }
     .navbar-default .col-sm-3 { float: left; }
     .nav-white.shrink-nav .navbar-nav li a { color: #fff; }
-    .navbar .text-right { background-color: rgba(27, 22, 28, 0.90); clear: both; min-height: 0; padding: 0; position: absolute; top: 80px; width: 60%; border-radius: 0px 0px 17px 17px; left:35%;}
-    .navbar.shrink-nav .text-right { top: 56px; }
+    .navbar .text-right { background-color: rgba(0, 0, 0, 0.75); clear: both; min-height: 0; padding: 0; position: absolute; top: 61px; width: 60%; border-radius: 0px 0px 17px 17px; left:35%;}
+    .navbar.shrink-nav .text-right { top: 61px; }
     .navbar-toggle {border-radius: 0px;}
 
     /* footer icons */
