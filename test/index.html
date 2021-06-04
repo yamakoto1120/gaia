@@ -17,8 +17,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     <!-- bootstrap -->
 	<style>
-	.preloader {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; background-color: #171717; }
-	.preloader img {display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: 50px; height: 50px; margin: auto;}
+
 
 body{ -webkit-animation: fadein 4s; 
 		   -moz-animation: fadein 4s;
@@ -90,8 +89,8 @@ body{ -webkit-animation: fadein 4s;
 
 <body>
     <!-- pre loader -->
-    <div class="preloader">
-        <img src="images/loader.svg" alt="Loading...">
+    <div class="preloader" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; background-color: #171717;">
+        <img src="images/loader.svg" style="display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: 50px; height: 50px; margin: auto;" alt="Loading...">
     </div>
     <!-- end of pre loader -->
 
