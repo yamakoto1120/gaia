@@ -28,10 +28,9 @@ Style.css / Version:1.1
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
 /* ----------------------------------
-   02 - PreLoader
+   02 - PreLoader - set at the end
 ---------------------------------- */
-.preloader {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; background-color: #171717; }
-.preloader img {display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: 50px; height: 50px; margin: auto; }
+
 
 /* ----------------------------------
    03 - Reset
@@ -183,7 +182,7 @@ nav .container{ display: table-cell; vertical-align: middle; height: 60px; posit
 .light-pagination .owl-page.active span { background: transparent; border: 1px solid rgba(255, 255, 255, 1); }
 .owl-carousel:hover .owl-prev {left: -35px; opacity: 1; }
 .owl-carousel:hover .owl-next { right: -35px; opacity: 1; }
-.owl-pagination { position: absolute; text-align: center; width: 100%; z-index: 100 !important; bottom: 30px; display: block; left: 0;}
+.owl-pagination { position: absolute; text-align: center; width: 100%; z-index: 100 !important; bottom: 30px; display: block; left: 0;display:none;}
 .owl-page { display: inline-block; padding: 6px 5px; }
 .slider-arrow-none .owl-prev, .slider-arrow-none .owl-next {display: none !important; }
 .owl-no-pagination .owl-pagination { display: none}
