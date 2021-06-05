@@ -2890,6 +2890,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+	overflow: hidden;
 }
 .nav > li {
     display: block;
@@ -5177,8 +5178,8 @@ font-weight:thin !important;
 
 line-height: 60%;
 transform: scale(1, 1.00);
-text-shadow: 0px 0px 12px #555555;
--webkit-text-stroke-width: 0.4px;
+text-shadow: 0px 0px 16px #555555;
+-webkit-text-stroke-width: 0.6px;
 -webkit-text-stroke-color: #5c5c5c;
 
 }
@@ -5187,7 +5188,7 @@ text-shadow: 0px 0px 12px #555555;
 @media (min-width: 1279px) and (max-width: 1599px) {.carousel-caption {font-size: 18vh;bottom: 50vh;}}
 @media (min-width: 990px) and (max-width: 1279px) {.carousel-caption {font-size: 17vh;bottom: 50vh;}}
 @media (min-width: 600px) and (max-width: 990px) {.carousel-caption {font-size: 16vh;bottom: 50vh;}}
-@media (min-width: 1px) and (max-width: 600px) {.carousel-caption {font-size: 14.5vh;bottom: 57vh;}}
+@media (min-width: 1px) and (max-width: 600px) {.carousel-caption {font-size: 11vh;bottom: 69vh;}}
 
 .carousel-caption .btn {
     text-shadow: none;
