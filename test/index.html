@@ -20,7 +20,7 @@
 
 
 
-.nav	{ -webkit-animation: fadein 1s; 
+.nav, .carousel-caption	{ -webkit-animation: fadein 1s; 
 		   -moz-animation: fadein 1s; 
 			-ms-animation: fadein 1s; 
 			 -o-animation: fadein 1s; 
@@ -28,17 +28,19 @@
 			
 			
 }
-
-
-
-.carousel-caption{ -webkit-animation: fadein 3s; 
-		   -moz-animation: fadein 3s; 
-			-ms-animation: fadein 3s; 
-			 -o-animation: fadein 3s; 
-				animation: fadein 3s;
-			
-			
+@font-face {
+    font-family: 'NalikaSignature';
+    src: url('fonts/NalikaSignature.eot');
+    src: url('fonts/NalikaSignature.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NalikaSignature.woff2') format('woff2'),
+        url('fonts/NalikaSignature.woff') format('woff'),
+        url('fonts/NalikaSignature.ttf') format('truetype'),
+        url('fonts/NalikaSignature.svg#NalikaSignature') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -72,7 +74,6 @@
     <link rel="stylesheet" href="css/animate.css" />
     <!-- icons -->
     <link rel="stylesheet" href="css/et-line-icons.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/font-logos.min.css" />
     <!-- carousels -->
     <link rel="stylesheet" href="css/owl.carousel.css" />
@@ -148,7 +149,7 @@
 		<div class="item owl-bg-img" style="background-image:url('images/carousel/carousel_1.jpg');">
                 <div class="slider-bg"></div>
                 <div class="slider-full relative"> </div>
-				 <div class="carousel-caption d-none d-md-block"><font face="FontAwesome">Capture<br>Your Magic </font></div>
+				 <div class="carousel-caption d-none d-md-block"><font face="NalikaSignature">Capture<br>Your Magic </font></div>
             </div>
             <!-- end carousel item -->
             <!-- carousel item -->
