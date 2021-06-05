@@ -5165,31 +5165,29 @@ button.close {
 .carousel-caption {
     position: absolute;
     right: 25px;
-    bottom: 50vh;
+
     left: 5vw;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
     text-align: left;
+font-weight:thin !important;
+	letter-spacing: 0px;
 
-	letter-spacing: 8px;
-font-family:'FontAwesome';
-font-size: 10vh;
-line-height: 107%;
-font-weight: normal !important;
-text-transform: uppercase !important;
-transform: scale(1, 1.02);
-text-shadow: 0px 0px 9px #555555;
+line-height: 60%;
+transform: scale(1, 1.00);
+text-shadow: 0px 0px 12px #555555;
 -webkit-text-stroke-width: 0.4px;
 -webkit-text-stroke-color: #5c5c5c;
+
 }
 
-@media (min-width: 1599px) {.carousel-caption {font-size: 10vh;}}
-@media (min-width: 1279px) and (max-width: 1599px) {.carousel-caption {font-size: 9.5vh;}}
-@media (min-width: 990px) and (max-width: 1279px) {.carousel-caption {font-size: 9vh;}}
-@media (min-width: 600px) and (max-width: 990px) {.carousel-caption {font-size: 8.5vh;}}
-@media (min-width: 1px) and (max-width: 600px) {.carousel-caption {font-size: 7vh;}}
+@media (min-width: 1599px) {.carousel-caption {font-size: 19vh;bottom: 50vh;}}
+@media (min-width: 1279px) and (max-width: 1599px) {.carousel-caption {font-size: 18vh;bottom: 50vh;}}
+@media (min-width: 990px) and (max-width: 1279px) {.carousel-caption {font-size: 17vh;bottom: 50vh;}}
+@media (min-width: 600px) and (max-width: 990px) {.carousel-caption {font-size: 16vh;bottom: 50vh;}}
+@media (min-width: 1px) and (max-width: 600px) {.carousel-caption {font-size: 14vh;bottom: 60vh;}}
 
 .carousel-caption .btn {
     text-shadow: none;

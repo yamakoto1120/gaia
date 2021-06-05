@@ -64,7 +64,7 @@ ul { padding: 0px; list-style: none outside none; margin: 0px;}
    04 - Typography
 ---------------------------------- */
 /* Section Heading */
-.section-heading{ font-size: 45px; padding-bottom:16px; text-transform: uppercase; font-weight: 600; letter-spacing: 1.8px; line-height:110%;}
+.section-heading{ font-size: 5wv; padding-bottom:16px; text-transform: uppercase; font-weight: 600; letter-spacing: 1.8px; line-height:110%;}
 
 /* Heading */
 h1 { font-size:47px; line-height:44px; letter-spacing: 1.9px;}
