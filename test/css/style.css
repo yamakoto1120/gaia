@@ -661,6 +661,18 @@ margin-top:55px;
 			
 }
 
+@font-face {
+    font-family: 'NalikaSignature';
+    src: url('../fonts/NalikaSignature.eot');
+    src: url('../fonts/NalikaSignature.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NalikaSignature.woff2') format('woff2'),
+        url('../fonts/NalikaSignature.woff') format('woff'),
+        url('../fonts/NalikaSignature.ttf') format('truetype'),
+        url('../fonts/NalikaSignature.svg#NalikaSignature') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 @keyframes fadein {
     from { opacity: 0; }
