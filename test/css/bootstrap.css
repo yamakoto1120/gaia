@@ -2938,6 +2938,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: none;
     margin:0;
     vertical-align: top;
+	
 }
 .nav-tabs > li > a {
     line-height: 1.42857143;
@@ -5165,30 +5166,54 @@ button.close {
 .carousel-indicators .active { border: 2px solid rgba(255,255,255,1); background-color: #fff; }
 .carousel-caption {
     position: absolute;
-    right: 25px;
-
-    left: 5vw;
+	top:30vh;
+    padding-left: 5vw;
     z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
     color: #fff;
     text-align: left;
-font-weight:thin !important;
-	letter-spacing: 0px;
-
-line-height: 60%;
-transform: scale(1, 1.00);
-text-shadow: 0px 0px 16px #555555;
--webkit-text-stroke-width: 0.6px;
--webkit-text-stroke-color: #5c5c5c;
-
+	font-weight:600 !important;
+	letter-spacing: 8px;
+	font-family: Garamond, serif;
+	text-transform: uppercase;
+	line-height: 105%;
+	text-shadow: 0px 0px 26px #000;
+	-webkit-text-stroke-color: #5c5c5c;
+	width:100%;
 }
 
-@media (min-width: 1599px) {.carousel-caption {font-size: 19vh;bottom: 50vh;}}
-@media (min-width: 1279px) and (max-width: 1599px) {.carousel-caption {font-size: 18vh;bottom: 50vh;}}
-@media (min-width: 990px) and (max-width: 1279px) {.carousel-caption {font-size: 17vh;bottom: 50vh;}}
-@media (min-width: 600px) and (max-width: 990px) {.carousel-caption {font-size: 16vh;bottom: 50vh;}}
-@media (min-width: 1px) and (max-width: 600px) {.carousel-caption {font-size: 11vh;bottom: 69vh;}}
+@media (min-width: 1599px) {.carousel-caption {font-size: 95px;left:120px;letter-spacing: 12px;-webkit-text-stroke-width: 1.8px;}}
+@media (min-width: 1279px) and (max-width: 1599px) {.carousel-caption {font-size: 85px;left:20px;-webkit-text-stroke-width: 1.5px;}}
+@media (min-width: 990px) and (max-width: 1279px) {.carousel-caption {font-size: 75px;left:20px;-webkit-text-stroke-width: 1.3px;}}
+@media (min-width: 600px) and (max-width: 990px) {.carousel-caption {font-size: 65px;left:12px;-webkit-text-stroke-width: 1px;}}
+@media (min-width: 1px) and (max-width: 600px) {.carousel-caption {font-size: 50px;left:12px;-webkit-text-stroke-width: 1px;}}
+
+
+
+.carousel-captionz {
+    position: absolute;
+	top:20vh;
+    padding-left: 5vw;
+    z-index: 10;
+    color: #fff;
+    text-align: left;
+	letter-spacing: 8px;
+	font-family: Arial;
+	text-transform: uppercase;
+	line-height: 180%;
+	transform: scale(1, 1.2);
+	text-shadow: 0px 0px 12px #000;
+	-webkit-text-stroke-color: #fff;
+	width:100%;
+}
+
+@media (min-width: 1599px) {.carousel-captionz {font-size: 18px;left:124px;letter-spacing: 12px;-webkit-text-stroke-width: 0.1px;font-weight:thin !important;}}
+@media (min-width: 1279px) and (max-width: 1599px) {.carousel-captionz {font-size: 17px;left:0px;-webkit-text-stroke-width: 0.1px;font-weight:thin !important;}}
+@media (min-width: 990px) and (max-width: 1279px) {.carousel-captionz {font-size: 16px;left:0px;-webkit-text-stroke-width: 0.1px;font-weight:thin !important;}}
+@media (min-width: 600px) and (max-width: 990px) {.carousel-captionz {font-size: 15px;left:12px;-webkit-text-stroke-width: 0.1px;font-weight:thin !important;}}
+@media (min-width: 1px) and (max-width: 600px) {.carousel-captionz {font-size: 14px;left:12px;-webkit-text-stroke-width: 0px;font-weight:thin !important;}}
+
+
+
 
 .carousel-caption .btn {
     text-shadow: none;

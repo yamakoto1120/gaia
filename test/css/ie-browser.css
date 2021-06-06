@@ -9,11 +9,11 @@ nav .container { display: block;}
 .owl-carousel.light-pagination .item{ cursor: pointer;}
 
 /* portfolio */
-figure:hover img { cursor: url("images/icon-zoom-white.cur"), pointer;}
+figure:hover img { cursor:pointer;}
 .popup-gallery img,
 .portfolio-popup img,
 .image-popup-no-margins img,
-.image-popup-vertical-fit img { cursor: url("images/icon-zoom.cur"), default;}
+.image-popup-vertical-fit img { cursor: pointer;}
 .mfp-zoom-out-cur,
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close,
 .mfp-image-holder,

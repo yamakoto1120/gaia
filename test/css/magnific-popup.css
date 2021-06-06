@@ -8,7 +8,7 @@
     z-index: 1042;
     overflow: hidden;
     position: fixed;
-    background: #fff;
+	background-color:rgba(0, 0, 0, 0.8);
     opacity:1;
     filter: alpha(opacity=90);
 }
@@ -56,7 +56,7 @@
     opacity: 1;
 }
 .popup-gallery img, .lightbox-gallery img, .image-popup-no-margins img, .image-popup-vertical-fit img {
-    cursor:url("../images/icon-zoom-white.png"), pointer;
+    cursor:pointer;
 }
 .portfolio-nav .mfp-close {
     position: inherit;
@@ -86,11 +86,11 @@
     cursor:default;
 }
 .zoom-gallery img {
-    cursor:url("../images/icon-zoom2.png"), pointer;
+    cursor:pointer;
 }
 zoom-in
 .mfp-zoom{
-    cursor:url("../images/icon-zoom.png"), pointer;
+    cursor:pointer;
 }
 
 .mfp-auto-cursor .mfp-content {
@@ -282,7 +282,7 @@ img.mfp-img {
     cursor: default;
     cursor: pointer;
     padding: 30px 0;
-    background:#fff;
+	background-color:rgba(0, 0, 0, 0.8);
 }
 
 /* The shadow behind the image */

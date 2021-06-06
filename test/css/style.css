@@ -32,8 +32,9 @@ Style.css / Version:1.1
 /* ----------------------------------
    03 - Reset
 ---------------------------------- */
+footer a {color:#9f9d9d;}
 a{ color: #000; }
-a:hover{ color: #686868; }
+a:hover{ color: #fff; }
 body{ font-size:12px; -webkit-font-smoothing: antialiased; letter-spacing: 0.03em; line-height:24px; color:#6d6c6c; font-family: 'Open Sans', sans-serif; }
 img { height:auto; -webkit-backface-visibility: hidden; max-width:100%; }
 ul, ol, dl {list-style-position: outside;}
@@ -45,7 +46,7 @@ input[type="button"], input[type="text"], textarea { -webkit-appearance: none;  
 ul { padding: 0px; list-style: none outside none; margin: 0px;}
 .animated { -moz-transition-duration: 0s !important; }
 .center-col{ margin-left:auto !important; float:none !important; margin-right:auto !important; }
-* { -moz-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; }
+
 ::selection { background:#000; color:#fff; }
 ::-moz-selection { background:#000; color:#fff; }
 ::-webkit-input-placeholder { color: #9c9b9b; text-overflow: ellipsis; }
@@ -64,7 +65,7 @@ ul { padding: 0px; list-style: none outside none; margin: 0px;}
    04 - Typography
 ---------------------------------- */
 /* Section Heading */
-.section-heading{ font-size: 5wv; padding-bottom:16px; text-transform: uppercase; font-weight: 600; letter-spacing: 1.8px; line-height:120%;width: 90%;margin: auto;}
+.section-heading{ font-size: 5wv; padding-bottom: 25px; text-transform: uppercase; font-weight: 600; letter-spacing: 1.8px; line-height:120%;width: 90%;margin: auto;}
 
 /* Heading */
 h1 { font-size:47px; line-height:44px; letter-spacing: 1.9px;}
@@ -147,7 +148,7 @@ nav .container{ display: table-cell; vertical-align: middle; height: 60px; posit
    09 - Reviews
 ---------------------------------- */
 .bg-fix { background-size: cover !important; position: relative; overflow: hidden; background-position: center center; background-repeat: no-repeat !important; background-attachment: fixed !important; }
-.review-section p { letter-spacing: 1px; color: #fff; margin:29px 0 19px; font-size:14px; line-height:22px;}
+.review-section p { letter-spacing: 1px; color: #fff; margin:29px 0 19px;  line-height:22px;}
 .review-section img { margin-top: 10px; border-radius: 50%; max-width: 120px; box-shadow: 0 0 0 5px #878787,0 0 0 4px #e8e8e8;}
 .review-section .client{ text-transform: uppercase; font-size:13px; display:block; width:100%; color: #828282; letter-spacing: 1.8px;}
 
@@ -190,8 +191,19 @@ nav .container{ display: table-cell; vertical-align: middle; height: 60px; posit
 ---------------------------------- */
 .portfolio-navigation li:first-child a{ margin-right: 29px}
 .portfolio-navigation li:last-child a{ margin-left: 29px;}
-.portfolio-navigation { height: 64px}
-.portfolio-navigation li a { margin: 0px 30px}
+.portfolio-navigation { height: 64px;}
+.portfolio-navigation li a { margin: 0px 30px;font-size:14px;}
+
+@media screen and (min-width: 1px) {
+.portfolio-navigation li a { margin: 0px 30px;font-size:14px;}
+}
+@media screen and (min-width: 600px) {
+.portfolio-navigation li a { margin: 0px 30px;font-size:15px;}
+}
+@media screen and (min-width: 900px) {
+.portfolio-navigation li a { margin: 0px 30px;font-size:16px;}
+}
+
 .portfolio-grid ul { margin-right:1px; }
 .portfolio-navigation a { color: #929191; font-size: 12px; }
 .grid li  {transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s;}
@@ -205,7 +217,7 @@ nav .container{ display: table-cell; vertical-align: middle; height: 60px; posit
 .grid { margin: 0 auto; }
 .grid figure { -webkit-transition: opacity 0.2s; transition: opacity 0.2s;  }
 .img-portfolio { opacity: 1; transition: all 0.3s ease 0s; overflow: hidden; }
-figure:hover img { -ms-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03);  transform: scale(1.03,1.03); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; cursor:url("../images/icon-zoom-white.png"), pointer; }
+figure:hover img { -ms-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03);  transform: scale(1.03,1.03); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; cursor:pointer; }
 .portfolio-wd .grid li { float: left; width: 20%;}
 .grid li { box-sizing: border-box; float: left; margin: 0; width: 25%;}
 .gutter .portfolio-grid ul { margin-left: -14px}
@@ -218,7 +230,7 @@ figure:hover img { -ms-transform: scale(1.03,1.03); -webkit-transform: scale(1.0
 .btn { display: inline-block; border: 1px solid transparent; margin-right: 20px; letter-spacing: 2px; }
 .btn.btn-small { font-size: 11px; padding: 4px 14px; letter-spacing: 1.2px;}
 .btn-black{ border: 1px solid #000; color: #fff; display: inline-block; background-color: #000; padding: 9px 20px 9px; width: auto;}
-.btn-black:hover {border: 1px solid #000;  color: #000; background-color: transparent}
+.btn-black:hover {border: 1px solid #000;  color: #000; background-color: transparent;}
 .btn-center { margin: 24px auto 0px auto !important;}
 
 /* ----------------------------------
@@ -365,8 +377,9 @@ i { margin: 0 4px; color: #fff;}
 	transition: all .3s ease;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
-	box-shadow: inset 0 0 133px white;
+		box-shadow: inset 0 0 133px white;
 }
+
 .serviceimgss {
 	width: 22%;
 	height: 200px;
@@ -381,6 +394,7 @@ i { margin: 0 4px; color: #fff;}
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	margin: auto;
+	
 }
 @media screen and (max-width: 1600px) {
 	.serviceimgss {
@@ -460,7 +474,7 @@ div.polaroid {
 	padding-bottom: 15px;
 	font-size: 23px;
 	text-align:left;
-	line-height:120%;
+	line-height:130%;
 }
 h1 {
 	font-size: 47px;
@@ -554,6 +568,8 @@ h9 {
 	margin-left: 17px;
 	margin-right: 17px;
 	margin-bottom: 20px;
+	
+
 }
 .text-grayy {
 	color: #666666 !important;
@@ -574,3 +590,105 @@ h9 {
 	margin-bottom: 80px;
 	text-align: left;
 }
+
+
+
+@media (max-width: 990px) {
+#portfoliocont{margin-top:25px;}
+}
+
+@media (min-width: 990px) {
+	
+#wedcont{
+	overflow: hidden;
+	position: relative;
+}
+
+
+#evecont{
+	overflow: hidden;
+	position: relative;
+}
+ 
+#extcont{
+	overflow: hidden;
+	position: relative;
+}
+
+
+div.polaroid {
+margin-top:55px;
+	}
+
+
+.section-heading {padding-bottom: 0px;}
+}
+ 
+ 
+ 
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ }
+}
+
+
+
+
+
+.nav, .carousel-caption	{ -webkit-animation: fadein 1s; 
+		   -moz-animation: fadein 1s; 
+			-ms-animation: fadein 1s; 
+			 -o-animation: fadein 1s; 
+				animation: fadein 1s;
+			
+			
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body{overflow-x:hidden;}
+.rights { font-size: 11px;padding-top:15px;padding-bottom:15px;}
