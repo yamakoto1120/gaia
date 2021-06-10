@@ -80,7 +80,7 @@
     cursor: progress; }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close, .mfp-image-holder, .mfp-iframe-holder, .mfp-close-btn-in, .mfp-content {
-    cursor:url("../images/icon-zoom-out.png"), pointer;
+    cursor:default;
 }
 #popup-form {
     cursor:default;
@@ -94,7 +94,7 @@ zoom-in
 }
 
 .mfp-auto-cursor .mfp-content {
-    cursor:url("../images/icon-zoom-out.png"), pointer;
+    cursor:default;
 }
 .mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {
     -webkit-user-select: none;

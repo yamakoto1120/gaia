@@ -17,5 +17,5 @@ figure:hover img { cursor:pointer;}
 .mfp-zoom-out-cur,
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close,
 .mfp-image-holder,
-.mfp-iframe-holder { cursor: url("images/icon-zoom-out.cur"), default;}
-.mfp-auto-cursor .mfp-content { cursor: url("images/icon-zoom-out.cur"), default;}
+.mfp-iframe-holder { cursor:default;}
+.mfp-auto-cursor .mfp-content { cursor:default;}
