@@ -25,7 +25,6 @@ Style.css / Version:1.1
 /* ----------------------------------
    01 - Google font
 ---------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
 
 
@@ -357,7 +356,9 @@ i { margin: 0 4px; color: #fff;}
 
 /* custom css */
 
-
+#eventservices{padding-top:121px;}
+#extraservices{padding-top:121px;}
+#wpackages{padding-top:121px;}
 #services h3 {
 	text-align: center;
 	font-size: 38px;
@@ -545,6 +546,9 @@ h8 {
 	font-family: Garamond, serif;
 	color: #616161;
 	text-align: center;
+	display: block;
+	margin-left:5px;
+	margin-right:5px;
 }
 h9 {
 	font-size: 39px;
@@ -605,7 +609,7 @@ h9 {
 
 
 @media (max-width: 990px) {
-#portfoliocont{margin-top:25px;}
+#portfolio{padding-top:110px;}
 }
 
 @media (min-width: 990px) {
